@@ -40,7 +40,7 @@ startDate = new Date();
 startDate.setDate(today.getDate()-28);
 endDate = new Date();
 endDate.setDate(startDate.getDate()+7);
-var url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4da7f6b1fd434facbfb876b0fc213637&tags=butterfly&' +
+var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4da7f6b1fd434facbfb876b0fc213637&tags=butterfly&' +
     'min_upload_date=' + startDate + '&max_upload_date=' + endDate + 
     '&license=1%2C2%2C3%2C4%2C5%2C6%2C7&sort=interestingness_desc&per_page=100&format=json&jsoncallback=?';
 
